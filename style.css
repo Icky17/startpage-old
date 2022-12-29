@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+:root {
+  --background--color: hsl(280, 6%, 10%);
+  --main--text: #fffffe;
+  --seconday--text: #94a1b2q;
+  --highlight--color: #907fc1;
+  --tertiary--color: #3b9871;
+  --main--font: "Rubik", cursive;
+}
+
+body {
+  background-color: var(--background--color);
+  font-family: var(--main--font);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 1230px;
+  margin: 0 auto;
+  width: 100%;
+  min-height: 100vh;
+  align-items: center;
+}
+body ul {
+  list-style: none;
+  padding: 0;
+}
+body input[type=text] {
+  font-family: "Rubik", cursive;
+  font-weight: bolder;
+  color: var(--background--color);
+}
+body a {
+  text-decoration: none;
+  color: var(--highlight--color);
+}
+body .snowflake {
+  z-index: 0;
+}
+body main {
+  width: 100%;
+  max-width: 1000px;
+  min-height: 100vh;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2em;
+  align-items: center;
+}
+body main .general {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2em;
+  flex-wrap: wrap;
+}
+body main .general__logo {
+  max-width: 200px;
+  padding-left: 0.2em;
+}
+body main .general__logo .logo {
+  height: 100%;
+  width: 100%;
+  border-radius: 5px;
+  max-width: 130px;
+}
+body main .general__logo .logo:hover {
+  cursor: pointer;
+}
+body main .general__hour {
+  color: var(--main--text);
+  min-width: 220px;
+  font-size: 4em;
+  display: flex;
+}
+body main .general__hour > div:nth-child(1)::after,
+body main .general__hour > div:nth-child(2)::after {
+  content: ":";
+  position: relative;
+  right: 5px;
+}
+body main .general__date {
+  display: flex;
+  justify-content: center;
+  color: var(--main--text);
+  min-width: 70px;
+  font-size: 1.5em;
+  width: 100%;
+}
+body main .general__date > div:nth-child(1)::after,
+body main .general__date > div:nth-child(2)::after {
+  content: "/";
+  position: relative;
+  right: 5px;
+}
+body main .search {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5em;
+  flex-wrap: wrap;
+}
+body main .search form {
+  min-width: 0;
+  max-width: 380px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 0.5em;
+}
+body main .search form input {
+  padding: 1em;
+  max-width: 380px;
+  border: none;
+  border-radius: 0.5em;
+  outline: none;
+  transition: ease-in-out 0.4s;
+}
+body main .search form input::-moz-placeholder {
+  text-align: center;
+}
+body main .search form input:-ms-input-placeholder {
+  text-align: center;
+}
+body main .search form input::placeholder {
+  text-align: center;
+}
+body main .search form input:focus {
+  box-shadow: var(--tertiary--color) 0px 0px 0px 2px, rgba(73, 206, 150, 0.5607843137) 0px 4px 6px -1px, rgba(90, 17, 139, 0.08) 0px 1px 0px inset;
+  transform: translateY(-5px);
+  transition: ease-in-out 0.4s;
+}
+body main .search .sound {
+  background-color: transparent;
+}
+body main .search .sound button {
+  padding: 0.8em;
+  border-radius: 50%;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  min-width: 42px;
+  min-height: 42px;
+}
+body main .search .sound button img {
+  width: 25px;
+  filter: invert(41%) sepia(80%) saturate(3733%) hue-rotate(236deg) brightness(97%) contrast(93%);
+}
+body main .search .sound button:hover {
+  cursor: pointer;
+}
+body main .links {
+  width: 100%;
+}
+body main .links ul {
+  display: flex;
+  gap: 2.5em;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+body main .links ul li {
+  max-width: 80px;
+  padding: 1em;
+  text-align: center;
+  border-radius: 0.5em;
+  transition: ease-in-out 0.4s;
+}
+body main .links ul li img {
+  height: 100%;
+  width: 100%;
+  width: 50px;
+  filter: invert(41%) sepia(80%) saturate(3733%) hue-rotate(236deg) brightness(97%) contrast(93%);
+}
+body main .links ul li:hover {
+  cursor: pointer;
+  box-shadow: var(--tertiary--color) 0px 0px 0px 2px, rgba(32, 85, 63, 0.5607843137) 0px 4px 6px -1px, rgba(90, 17, 139, 0.08) 0px 1px 0px inset;
+  transform: translateY(-5px);
+  transition: ease-in-out 0.4s;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--main--text);
+}
+
+.rotate {
+  -webkit-animation: rotate 0.5s linear infinite;
+          animation: rotate 0.5s linear infinite;
+}
+@-webkit-keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}/*# sourceMappingURL=style.css.map */
