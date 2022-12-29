@@ -54,7 +54,7 @@ function toggleSnow() {
     logo.src = './assets/img/snow.gif';
     return;
   }
-  logo.src = './assets/img/pixel-planet.gif';
+  logo.src = './assets/img/pixel.gif';
   snow.classList.remove('snowflakes');
   snow.classList.add('not-snow');
 }
