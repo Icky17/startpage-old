@@ -1,9 +1,9 @@
 # startpage
 My Personal Startpage
 
-![Screenshot](startpage-1.png)
+![Screenshot](/docs/images/startpage-1.png)
 
-![Screenshot](startpage-2.png) 
+![Screenshot](/docs/images/startpage-2.png) 
 
 ## Acknowledgements
 
