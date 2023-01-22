@@ -9,4 +9,4 @@ My Personal Startpage
 
 - **Thanks to**
 
-  - [bipo38](https://github.com/bipo38/bipo38.github.io)
+  - [bipo38](https://github.com/bipo38)
